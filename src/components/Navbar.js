@@ -36,6 +36,10 @@ function Navbar() {
 						style={{ maxWidth: "64px", maxHeight: "64px" }}
 					/>
 				</Link>
+				<div className="phone-container">
+					<i className="fas fa-phone"></i>
+					<span>0612345678</span>
+				</div>
 				<div className="menu-icon" onClick={handleClick}>
 					<i className={click ? "fas fa-times" : "fas fa-bars"}></i>
 				</div>

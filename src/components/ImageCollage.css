@@ -1,11 +1,10 @@
 .collage-container {
-    width: 90%;
-    max-width: 1200px;
+    width: 95vw;
+    max-width: none;
     margin: 40px auto;
     padding: 20px;
 }
 
-/* Add this new rule to adjust spacing between consecutive collages */
 .collage-container + .collage-container {
     margin-top: -60px;
 }
@@ -22,7 +21,7 @@
 }
 
 .collage-left {
-    height: 100%;
+    height: 595px; /* Matches the height of right grid (290px * 2 + 15px gap) */
 }
 
 .collage-left .collage-item {
@@ -65,18 +64,5 @@
     
     .collage-left {
         height: 600px;
-    }
-    
-    .collage-right {
-        grid-template-rows: repeat(2, 250px);
-        order: 2;
-    }
-
-    .reversed .collage-right {
-        order: 1;
-    }
-
-    .reversed .collage-left {
-        order: 2;
     }
 }

@@ -27,7 +27,7 @@ function Footer() {
           </div>
           <div className='footer-logo'>
             <Link to='/'>
-              <img src={require('../images/logo_text.png')} alt="Logo" />
+              <img src={require('../images/V-2.png')} alt="Logo" />
             </Link>
           </div>
         </div>

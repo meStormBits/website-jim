@@ -38,7 +38,30 @@
 .nav-links i {
     padding-left: 8px; /* Adjust spacing as needed */
 }
+.phone-container {
+    position: absolute;
+    right: 20px;
+    display: flex;
+    align-items: center;
+    color: #bdbeb2;
+    font-size: 1rem;
+    gap: 8px;
+}
 
+.phone-container i {
+    font-size: 1.2rem;
+}
+
+.phone-container:hover {
+    color: #fff;
+    transition: all 0.3s ease-in-out;
+}
+
+@media screen and (max-width: 960px) {
+    .phone-container {
+        display: none;
+    }
+}
 
 .fa-typo3 {
 	margin-left: 0.5rem;
