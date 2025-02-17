@@ -9,22 +9,22 @@ import ScrollToTop from "./components/ScrollToTop";
 import PageLoader from "./components/PageLoader"; // Import PageLoader
 
 function App() {
-	return (
-		<div className="App">
-			<Router>
-				<ScrollToTop />
-				<Navbar />
-				<PageLoader> {/* Wrap routes inside PageLoader */}
-					<Routes>
-						<Route path="/" exact Component={Home} />
-						<Route path="/producten/led_verlichting" exact Component={ProductenLED} />
-						<Route path="/producten/ballondecoratie" exact Component={ProductenBALLON} />
-						<Route path="/producten/photobooth" exact Component={ProductenBOOTH} />
-					</Routes>
-				</PageLoader>
-			</Router>
-		</div>
-	);
+    return (
+        <div className="App">
+            <Router basename="/website-jim">
+                <ScrollToTop />
+                <Navbar />
+                <PageLoader>
+                    <Routes>
+                        <Route path="/" exact Component={Home} />
+                        <Route path="/producten/led_verlichting" exact Component={ProductenLED} />
+                        <Route path="/producten/ballondecoratie" exact Component={ProductenBALLON} />
+                        <Route path="/producten/photobooth" exact Component={ProductenBOOTH} />
+                    </Routes>
+                </PageLoader>
+            </Router>
+        </div>
+    );
 }
 
 export default App;

@@ -15,7 +15,6 @@
 	z-index: 999;
 	box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.1); /* Optional shadow for visibility */
 }
-
 .navbar-container {
 	display: flex;
 	justify-content: center;
@@ -23,7 +22,6 @@
 	height: 60px;
 	max-width: 1500px;
 }
-
 .navbar-logo {
 	color: #fff;
 	justify-self: start;
@@ -34,40 +32,37 @@
 	display: flex;
 	align-items: center;
 }
-
 .nav-links i {
-    padding-left: 8px; /* Adjust spacing as needed */
+	padding-left: 8px; /* Adjust spacing as needed */
 }
 .phone-container {
-    position: absolute;
-    right: 20px;
-    display: flex;
-    align-items: center;
-    color: #bdbeb2;
-    font-size: 1rem;
-    gap: 8px;
+	position: absolute;
+	right: 20px;
+	display: flex;
+	align-items: center;
+	color: #bdbeb2;
+	font-size: 1rem;
+	gap: 8px;
 }
 
 .phone-container i {
-    font-size: 1.2rem;
+	font-size: 1.2rem;
 }
 
 .phone-container:hover {
-    color: #fff;
-    transition: all 0.3s ease-in-out;
+	color: #fff;
+	transition: all 0.3s ease-in-out;
 }
 
 @media screen and (max-width: 960px) {
-    .phone-container {
-        display: none;
-    }
+	.phone-container {
+		display: none;
+	}
 }
-
 .fa-typo3 {
 	margin-left: 0.5rem;
 	font-size: 1.8rem;
 }
-
 .nav-menu {
 	display: grid;
 	grid-template-columns: repeat(4, auto);
@@ -77,7 +72,6 @@
 	width: 20vw;
 	margin-right: 2rem;
 }
-
 .nav-links {
 	color: #bdbeb2;
 	display: flex;
@@ -86,24 +80,19 @@
 	padding: 0.5rem 1rem;
 	font-family: "Tenor Sans", sans-serif;
 }
-
 .nav-links:hover {
 	transition: all 0.3s ease-in-out;
 	color: #fff;
 }
-
 .fa-bars {
 	color: #fff;
 }
-
 .nav-links-mobile {
 	display: none;
 }
-
 .menu-icon {
 	display: none;
 }
-
 /* Dropdown Menu Styling */
 /* Default Dropdown (Hidden) */
 .dropdown-menu {
@@ -122,13 +111,11 @@
 	transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease;
 	transform: translateY(-10px);
 }
-
 .dropdown-menu.show {
 	opacity: 1;
 	visibility: visible;
 	transform: translateY(0);
 }
-
 /* Dropdown Links */
 .dropdown-link {
 	color: #bdbeb2;
@@ -139,21 +126,17 @@
 	font-size: 1rem;
 	transition: background 0.3s ease;
 }
-
 .nav-item li {
 	list-style: none;
 }
-
 .dropdown-link:hover {
 	background-color: #444;
 	color: white;
 }
-
 /* Make dropdown appear under "PRODUCTEN" */
 .nav-item {
 	position: relative;
 }
-
 
 @media screen and (max-width: 960px) {
 	.dropdown-menu {
@@ -166,35 +149,29 @@
 		overflow: hidden;
 		transition: all 0.3s ease-in-out;
 	}
-
 	.dropdown-menu.show {
 		opacity: 1;
 		max-height: 100vh; /* Adjust this value as needed */
 		padding: 10px 0;
 		margin-top: 5px;
 	}
-
 	.mobile-dropdown {
 		width: 100%;
 	}
-
 	.nav-item {
 		display: flex;
 		flex-direction: column;
 	}
-
 	.nav-menu.active {
 		max-height: 100vh;
 		overflow-y: auto;
 	}
-
 	.nav-menu.active .dropdown-menu {
 		display: flex;
 		flex-direction: column;
 		width: 100%;
 		height: auto;
 	}
-
 	.nav-links {
 		text-align: center;
 		color: #fff;
@@ -202,35 +179,29 @@
 		width: 100%;
 		display: block;
 	}
-
 	.nav-links a {
 		padding-top: 100px;
 	}
-
 	.dropdown-link {
 		padding: 12px 20px;
 		text-align: center;
 		width: 100%;
 		display: block;
 	}
-
 	.nav-item.dropdown .dropdown-menu.show + .nav-item {
 		margin-top: 150px; /* Adjust to push down */
 	}
-
 	.nav-links:hover {
 		background-color: #fff;
 		color: #242424;
 		border-radius: 0;
 	}
-
 	.navbar-logo {
 		position: absolute;
 		top: 0;
 		left: 0;
 		transform: translate(25%, 0%);
 	}
-
 	.menu-icon {
 		display: block;
 		position: absolute;
@@ -240,7 +211,6 @@
 		font-size: 1.8rem;
 		cursor: pointer;
 	}
-
 	.fa-times {
 		color: #fff;
 		font-size: 2rem;
@@ -256,7 +226,6 @@
 		opacity: 1;
 		transition: all 0.5s ease;
 	}
-
 	.nav-menu.active {
 		background: #242222;
 		left: 0;
@@ -264,20 +233,17 @@
 		transition: all 0.5s ease;
 		z-index: 1;
 	}
-
 	.nav-links:hover {
 		background-color: #fff;
 		color: #242424;
 		border-radius: 0;
 	}
-
 	.navbar-logo {
 		position: absolute;
 		top: 0;
 		left: 0;
 		transform: translate(25%, 0%);
 	}
-
 	.menu-icon {
 		display: block;
 		position: absolute;
@@ -287,12 +253,10 @@
 		font-size: 1.8rem;
 		cursor: pointer;
 	}
-
 	.fa-times {
 		color: #fff;
 		font-size: 2rem;
 	}
-
 	.nav-links-mobile {
 		display: block;
 		text-align: center;
@@ -307,7 +271,6 @@
 		border: 1px solid #fff;
 		transition: all 0.3s ease-out;
 	}
-
 	.nav-links-mobile:hover {
 		background: #fff;
 		color: #242424;
