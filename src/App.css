@@ -1,0 +1,44 @@
+@font-face {
+	font-family: "Tenor Sans", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	src: url("./fonts/TenorSans-Regular.ttf") format("truetype");
+}
+
+@font-face {
+	font-family: "Glacial Indifference", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	src: url("./fonts/GlacialIndifference-Regular.otf") format("truetype");
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: "PT Sans", sans-serif;
+}
+
+body {
+	padding-top: 60px;
+}
+
+.home,
+.producten,
+.bestellen,
+.contact {
+	display: flex;
+	height: 90vh;
+	align-items: center;
+	justify-content: center;
+	font-size: 3rem;
+}
+
+.services {
+	background-image: url("./images/background.png");
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	color: #fff;
+	font-size: 100px;
+}

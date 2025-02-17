@@ -1,0 +1,194 @@
+@font-face {
+	font-family: "Tenor Sans", serif;
+	font-weight: 400;
+	font-style: normal;
+	src: url("../fonts/TenorSans-Regular.ttf") format("truetype");
+}
+
+@font-face {
+	font-family: "Glacial Indifference", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	src: url("../fonts/GlacialIndifference-Regular.otf") format("truetype");
+}
+
+/* ✅ Make the overlay full-screen */
+/* ✅ Make the overlay full-screen */
+.pdf-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+/* ✅ Make the PDF viewer full-screen */
+.pdf-fullscreen {
+    width: 90%;
+    height: 90%;
+    background: #121212;
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+}
+
+/* ✅ Zoom Controls + Close Button Together */
+.zoom-controls {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 10px 15px;
+    border-radius: 10px;
+    z-index: 1001;
+}
+
+.zoom-controls button {
+    background: white;
+    color: black;
+    border: none;
+    padding: 5px 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* ✅ Style Close Button */
+.close-pdf-button {
+    background: #ff4d4d;
+    color: white;
+    font-weight: bold;
+}
+
+.close-pdf-button:hover {
+    background: #cc0000;
+}
+
+.zoom-controls button:hover {
+	background: #f2f2f2;
+}
+
+/* ✅ Ensure all text is white */
+.zoom-controls span {
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+	display: flex;
+	align-items: center;
+}
+
+.hero-container {
+	background: url("../images/bg.jfif") center center/cover no-repeat;
+	min-height: 85vh; /* Prevents text from overflowing */
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	padding: 20px; /* Adjusted padding */
+	box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2);
+	object-fit: contain;
+	overflow: hidden; /* Prevents text from spilling out */
+	transition: ease-in-out 0.3s;
+}
+
+.hero-content:hover {
+	transform: scale(1.03); /* Slight scale-up effect */
+}
+
+.hero-content {
+	background: rgba(0, 0, 0, 0.75); /* Semi-transparent gray box */
+	padding: 80px 60px; /* Reduced padding */
+	padding-bottom: 40px;
+	color: white;
+	max-width: 80%;
+	text-align: center;
+	justify-content: center;
+	word-wrap: break-word; /* Ensures text doesn't stretch out */
+	transition: ease-in-out 0.3s;
+}
+
+.hero-container h1 {
+	color: #bdbeb2;
+	font-family: 'Tenor Sans', serif;
+	font-weight: 400;
+	font-size: 2rem; /* Reduced font size */
+	margin-bottom: 10px;
+}
+
+.hero-container p {
+	color: #bdbeb2;
+	font-size: 1rem;
+	font-weight: 400;
+	margin-top: 0;
+	font-family: 'Glacial Indifference', sans-serif;
+	max-width: 90%; /* Prevents text from stretching too wide */
+	word-wrap: break-word;
+}
+
+.hero-button {
+	display: inline-block;
+	margin-top: 30px; /* Adjusted spacing */
+	padding: 10px 20px;
+	background-color: gray;
+	color: white;
+	border: none;
+	font-size: 18px;
+	cursor: pointer;
+	transition: background 0.3s ease;
+}
+
+.hero-button:hover {
+	background-color: darkgray;
+}
+
+/* 📱 Responsive Fixes for Smaller Screens */
+@media screen and (max-width: 960px) {
+	.hero-container {
+		height: auto; /* Adjusts height dynamically */
+		padding: 50px 20px;
+		margin-top: 0; /* Removes negative margin */
+	}
+
+	.hero-content {
+		max-width: 90%;
+		padding: 50px 40px;
+	}
+
+	.hero-container h1 {
+		font-size: 2rem; /* Reduce heading size */
+	}
+
+	.hero-container p {
+		font-size: 0.9rem; /* Reduce paragraph size */
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.hero-container {
+		padding: 40px 15px;
+		height: auto; /* Ensures dynamic height */
+	}
+
+	.hero-content {
+		max-width: 95%; /* Expands content width slightly */
+		padding: 40px 30px;
+	}
+
+	.hero-container h1 {
+		font-size: 1.5rem;
+	}
+
+	.hero-container p {
+		font-size: 0.8rem;
+	}
+}

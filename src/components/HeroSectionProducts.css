@@ -1,0 +1,107 @@
+@font-face {
+	font-family: "Tenor Sans", serif;
+	font-weight: 400;
+	font-style: normal;
+	src: url("../fonts/TenorSans-Regular.ttf") format("truetype");
+}
+
+@font-face {
+	font-family: "Glacial Indifference", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	src: url("../fonts/GlacialIndifference-Regular.otf") format("truetype");
+}
+
+.hero-container {
+	background: url("../images/bg.jfif") center center/cover no-repeat;
+	min-height: 85vh; /* Prevents text from overflowing */
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 20px; /* Adjusted padding */
+	box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2);
+	object-fit: contain;
+	overflow: hidden; /* Prevents text from spilling out */
+	transition: ease-in-out 0.3s;
+}
+
+.hero-content:hover {
+	transform: scale(1.03); /* Slight scale-up effect */
+}
+
+.hero-content {
+	background: rgba(0, 0, 0, 0.75); /* Semi-transparent gray box */
+	padding: 80px 60px; /* Reduced padding */
+	color: white;
+	max-width: 80%;
+    display: flex; /* Enables flexbox */
+    flex-direction: column; /* Stacks elements vertically */
+    align-items: center; /* Centers items horizontally */
+    justify-content: center; /* Centers items vertically */
+    text-align: center; /* Ensures text remains centered */
+	word-wrap: break-word; /* Ensures text doesn't stretch out */
+	transition: ease-in-out 0.3s;
+	height: auto;
+	min-height: 10vh;
+}
+
+.hero-container h1 {
+	color: #bdbeb2;
+	font-family: 'Tenor Sans', serif;
+	font-weight: 700;
+	font-size: 2rem; /* Reduced font size */
+	margin-bottom: 10px;
+}
+
+.hero-container p {
+	color: #bdbeb2;
+	font-size: 1rem;
+	font-weight: 400;
+	margin-top: 0;
+	font-family: 'Glacial Indifference', sans-serif;
+	max-width: 90%; /* Prevents text from stretching too wide */
+	word-wrap: break-word;
+}
+
+/* 📱 Responsive Fixes for Smaller Screens */
+@media screen and (max-width: 960px) {
+	.hero-container {
+		height: auto; /* Adjusts height dynamically */
+		padding: 50px 20px;
+		margin-top: 0; /* Removes negative margin */
+	}
+
+	.hero-content {
+		max-width: 90%;
+		padding: 50px 40px;
+	}
+
+	.hero-container h1 {
+		font-size: 2rem; /* Reduce heading size */
+	}
+
+	.hero-container p {
+		font-size: 0.9rem; /* Reduce paragraph size */
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.hero-container {
+		padding: 40px 15px;
+		height: auto; /* Ensures dynamic height */
+	}
+
+	.hero-content {
+		max-width: 95%; /* Expands content width slightly */
+		padding: 40px 30px;
+	}
+
+	.hero-container h1 {
+		font-size: 1.5rem;
+	}
+
+	.hero-container p {
+		font-size: 0.8rem;
+	}
+}
