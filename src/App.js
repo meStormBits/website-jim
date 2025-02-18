@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { HashRouter as Router, Route, Routes } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Home from "./components/pages/Home";
 import ProductenLED from "./components/pages/ProductenLED";
@@ -11,7 +11,7 @@ import PageLoader from "./components/PageLoader"; // Import PageLoader
 function App() {
     return (
         <div className="App">
-            <Router basename="/website-jim">
+            <Router>
                 <ScrollToTop />
                 <Navbar />
                 <PageLoader>

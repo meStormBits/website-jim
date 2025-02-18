@@ -114,47 +114,84 @@
         width: 80%;
 	}
 }
+@media screen and (max-width: 768px) {
+    .product-container {
+        flex-direction: column;
+        padding: 20px;
+        margin: 20px 0;
+    }
 
-@media (max-width: 768px) {
-	.product-text {
-		right: 0; /* Fully overlay the image */
-		width: 90%; /* Increase width slightly */
-		height: auto; /* Adjust height dynamically */
-		padding: 15px;
-	}
+    .product-image-container {
+        width: 100%;
+        margin: 0;
+    }
 
-	.reverse .product-text {
-		left: 0; /* Center text when reversed on smaller screens */
-        width: 90%; /* Increase width slightly */
-		height: auto; /* Adjust height dynamically */
-		padding: 15px;
-	}
+    .product-overlay-text {
+        position: relative;
+        width: 100%;
+        right: 0;
+        left: 0;
+        top: 0;
+        transform: none;
+        margin-top: 20px;
+    }
 
-	.product-button {
-		margin-top: 20px; /* Add more space between text and button */
-	}
+    .reverse .product-overlay-text {
+        left: 0;
+        margin-top: 20px;
+    }
+
+    .product-image {
+        width: 100%;
+        height: auto;
+    }
 }
-
 @media (max-width: 480px) {
-	.product-text {
-		position: absolute;
-		top: 50%;
-		left: 50%;
-		transform: translate(-50%, -50%); /* Fully center on smaller screens */
-		width: 90%;
-		max-width: 350px;
-		padding: 15px;
-		text-align: center; /* Center text for mobile */
-	}
+    .product-card {
+        padding-bottom: 80px;
+    }
+
+    .product-container {
+        flex-direction: column;
+        max-height: none;
+        padding: 10px;
+    }
+
+    .product-text {
+        position: relative;
+        top: 20px;
+        left: 0;
+        transform: none;
+        width: 100%;
+        max-width: 350px;
+        padding: 15px;
+        text-align: center;
+        margin: 0 auto;
+        height: auto;
+        order: 2;
+    }
+
+    .product-image {
+        order: 1;
+        width: 100%;
+        height: auto;
+    }
 
     .reverse .product-text {
-		position: absolute;
-		top: 50%;
-		left: 50%;
-		transform: translate(-50%, -50%); /* Fully center on smaller screens */
-		width: 90%;
-		max-width: 350px;
-		padding: 15px;
-		text-align: center; /* Center text for mobile */
-	}
+        position: relative;
+        top: 20px;
+        left: 0;
+        transform: none;
+        width: 100%;
+        max-width: 350px;
+        padding: 15px;
+        text-align: center;
+        margin: 0 auto;
+        height: auto;
+        order: 2;
+    }
+
+    .reverse .product-image {
+        order: 1;
+    }
 }

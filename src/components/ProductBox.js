@@ -4,12 +4,12 @@ import './ProductBox.css';
 import '../App.css';
 
 function ProductBox({ imageUrl, title, text, reverse, buttonText, route }) {
-  const navigate = useNavigate(); // Hook for navigation
+  const navigate = useNavigate();
 
   return (
     <div className={`product-card ${reverse ? 'reverse' : ''}`}>
       <div className="product-container">
-        {!reverse && <img src={imageUrl} alt="Food" className="product-image" />}
+        <img src={imageUrl} alt="Food" className="product-image" />
         <div className="product-text">
           <h2>{title}</h2>
           <p>
@@ -24,7 +24,6 @@ function ProductBox({ imageUrl, title, text, reverse, buttonText, route }) {
             {buttonText}
           </button>
         </div>
-        {reverse && <img src={imageUrl} alt="Food" className="product-image" />}
       </div>
     </div>
   );
