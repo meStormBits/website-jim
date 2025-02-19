@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/website-jim/static/css/main.a5a13fc6.css",
-    "main.js": "/website-jim/static/js/main.8c33c5a0.js",
+    "main.css": "/website-jim/static/css/main.129fda3e.css",
+    "main.js": "/website-jim/static/js/main.7a59d5f7.js",
     "static/media/background.png": "/website-jim/static/media/background.d1d2db5892f2dd5b5416.png",
     "static/media/bg.jfif": "/website-jim/static/media/bg.1c310abe2c31e33b8f11.jfif",
     "static/media/TenorSans-Regular.ttf": "/website-jim/static/media/TenorSans-Regular.0d22289d38b3d37f95b6.ttf",
     "static/media/GlacialIndifference-Regular.otf": "/website-jim/static/media/GlacialIndifference-Regular.884dc679b35db5f785f2.otf",
     "index.html": "/website-jim/index.html",
-    "main.a5a13fc6.css.map": "/website-jim/static/css/main.a5a13fc6.css.map",
-    "main.8c33c5a0.js.map": "/website-jim/static/js/main.8c33c5a0.js.map"
+    "main.129fda3e.css.map": "/website-jim/static/css/main.129fda3e.css.map",
+    "main.7a59d5f7.js.map": "/website-jim/static/js/main.7a59d5f7.js.map"
   },
   "entrypoints": [
-    "static/css/main.a5a13fc6.css",
-    "static/js/main.8c33c5a0.js"
+    "static/css/main.129fda3e.css",
+    "static/js/main.7a59d5f7.js"
   ]
 }
