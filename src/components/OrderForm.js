@@ -47,8 +47,12 @@ function OrderForm() {
 	const handleSubmit = async (e) => {
 		e.preventDefault();
 
+		console.log("Form data:", formData);
+		console.log(process.env.REACT_APP_WIX_OAUTH_TOKEN)
+		console.log(process.env.REACT_APP_WIX_SITE_ID)
+
 		try {
-			const response = await fetch('/api/contacts/v4/contacts', {  // Changed from relative to absolute URL
+			const response = await fetch(getApiUrl('/contacts/v4/contacts'), {  // Changed from relative to absolute URL
 				method: "POST",
 				headers: {
 					"Content-Type": "application/json",
