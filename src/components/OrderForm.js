@@ -47,12 +47,12 @@ function OrderForm() {
 		e.preventDefault();
 
 		try {
-			const response = await fetch("/api/contacts/v4/contacts", {
+			const response = await fetch("https://www.wixapis.com/contacts/v4/contacts", {  // Changed from relative to absolute URL
 				method: "POST",
 				headers: {
 					"Content-Type": "application/json",
-					Authorization: process.env.REACT_APP_WIX_OAUTH_TOKEN,
-					"wix-site-id": process.env.REACT_APP_WIX_SITE_ID,
+					"Authorization": process.env.REACT_APP_WIX_OAUTH_TOKEN, 
+					"wix-site-id": process.env.REACT_APP_WIX_SITE_ID
 				},
 				body: JSON.stringify({
 					info: {

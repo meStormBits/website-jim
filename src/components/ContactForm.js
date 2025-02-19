@@ -42,7 +42,7 @@ function ContactForm({
 		<div className="contact-form-container">
 			<form
 				target="_blank"
-				action="https://formsubmit.co/a188680331351ecd38c055ca4b49b494"
+				action="https://formsubmit.co/thisiszide@gmail.com"
 				method="POST"
 				className="contact-form"
 				onSubmit={handleSubmit}>
