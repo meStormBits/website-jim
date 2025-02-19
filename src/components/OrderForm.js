@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./OrderForm.css";
-import { getApiUrl } from './App';
+import {getApiUrl} from "../App.js"
 
 function OrderForm() {
 	// Add at the beginning of the component
@@ -48,12 +48,13 @@ function OrderForm() {
 		e.preventDefault();
 
 		try {
-			const response = await fetch(getApiUrl('/contacts/v4/contacts'), {  // Changed from relative to absolute URL
+			const response = await fetch('/api/contacts/v4/contacts', {  // Changed from relative to absolute URL
 				method: "POST",
 				headers: {
 					"Content-Type": "application/json",
 					"Authorization": process.env.REACT_APP_WIX_OAUTH_TOKEN, 
-					"wix-site-id": process.env.REACT_APP_WIX_SITE_ID
+					"wix-site-id": process.env.REACT_APP_WIX_SITE_ID,
+					"Access-Control-Allow-Origin": "*"
 				},
 				body: JSON.stringify({
 					info: {
