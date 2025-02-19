@@ -7,6 +7,7 @@ import ProductenBALLON from "./components/pages/ProductenBALLON";
 import ProductenBOOTH from "./components/pages/ProductenBOOTH";
 import ScrollToTop from "./components/ScrollToTop";
 import PageLoader from "./components/PageLoader"; // Import PageLoader
+import Bestellen from "./components/pages/Bestellen";
 
 function App() {
     return (
@@ -20,6 +21,7 @@ function App() {
                         <Route path="/producten/led_verlichting" exact Component={ProductenLED} />
                         <Route path="/producten/ballondecoratie" exact Component={ProductenBALLON} />
                         <Route path="/producten/photobooth" exact Component={ProductenBOOTH} />
+                        <Route path="/bestellen" exact Component={Bestellen} />
                     </Routes>
                 </PageLoader>
             </Router>
