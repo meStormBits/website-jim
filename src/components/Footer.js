@@ -18,10 +18,10 @@ function Footer() {
         {/* Right side: Logo & Social Icons */}
         <div className='footer-right'>
           <div className='social-icons'>
-            <Link className='social-icon-link' to='/' target='_blank' aria-label='Facebook'>
+            <Link className='social-icon-link' to='https://www.facebook.com/profile.php?id=61569594416814' target='_blank' aria-label='Facebook'>
               <i className='fab fa-facebook-f' />
             </Link>
-            <Link className='social-icon-link' to='/' target='_blank' aria-label='Instagram'>
+            <Link className='social-icon-link' to='https://www.instagram.com/vanvlimmerenfeestverhuur/' target='_blank' aria-label='Instagram'>
               <i className='fab fa-instagram' />
             </Link>
           </div>

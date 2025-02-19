@@ -26,68 +26,78 @@ function Navbar() {
 		};
 	}, []);
 
-	return (
-		<nav className="navbar">
-			<div className="navbar-container">
-				<Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
-					<img
-						src={require("../images/V-2.png")}
-						alt="Logo"
-						style={{ maxWidth: "64px", maxHeight: "64px" }}
-					/>
-				</Link>
-				<div className="phone-container">
-					<i className="fas fa-phone"></i>
-					<span>0612345678</span>
-				</div>
-				<div className="menu-icon" onClick={handleClick}>
-					<i className={click ? "fas fa-times" : "fas fa-bars"}></i>
-				</div>
-				<ul className={click ? "nav-menu active" : "nav-menu"}>
-					<li className="nav-item">
-						<Link to="/" className="nav-links" onClick={closeMobileMenu}>
-							HOME
-						</Link>
-					</li>
+    const handleContactClick = (e) => {
+        e.preventDefault();
+        closeMobileMenu();
+        
+        const contactForm = document.querySelector('.contact-form-container');
+        if (contactForm) {
+            contactForm.scrollIntoView({ behavior: 'smooth' });
+        }
+    };
 
-					<li className="nav-item dropdown">
-						<div className="nav-links" onClick={toggleDropdown}>
-							PRODUCTEN <i className="fas fa-caret-down"></i>
-						</div>
-						<ul className={`dropdown-menu ${dropdown ? "show" : ""} ${isMobile ? "mobile-dropdown" : ""}`}>
-							<li>
-								<Link to="/producten/led_verlichting" className="dropdown-link" onClick={closeMobileMenu}>
-									LED VERLICHTING
-								</Link>
-							</li>
-							<li>
-								<Link to="/producten/ballondecoratie" className="dropdown-link" onClick={closeMobileMenu}>
-									BALLONDECORATIE
-								</Link>
-							</li>
-							<li>
-								<Link to="/producten/photobooth" className="dropdown-link" onClick={closeMobileMenu}>
-									PHOTOBOOTH
-								</Link>
-							</li>
-						</ul>
-					</li>
-
-					<li className="nav-item">
-						<Link to="/bestellen" className="nav-links" onClick={closeMobileMenu}>
-							BESTELLEN
-						</Link>
-					</li>
-
-					<li className="nav-item">
-						<Link to="/contact" className="nav-links" onClick={closeMobileMenu}>
-							CONTACT
-						</Link>
-					</li>
-				</ul>
-			</div>
-		</nav>
-	);
+    return (
+        <nav className="navbar">
+            <div className="navbar-container">
+                <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
+                    <img
+                        src={require("../images/V-2.png")}
+                        alt="Logo"
+                        style={{ maxWidth: "64px", maxHeight: "64px" }}
+                    />
+                </Link>
+                <div className="phone-container">
+                    <i className="fas fa-phone"></i>
+                    <span>06-18218292</span>
+                </div>
+                <div className="menu-icon" onClick={handleClick}>
+                    <i className={click ? "fas fa-times" : "fas fa-bars"}></i>
+                </div>
+                <ul className={click ? "nav-menu active" : "nav-menu"}>
+                    <li className="nav-item">
+                        <Link to="/" className="nav-links" onClick={closeMobileMenu}>
+                            HOME
+                        </Link>
+                    </li>
+    
+                    <li className="nav-item dropdown">
+                        <div className="nav-links" onClick={toggleDropdown}>
+                            PRODUCTEN <i className="fas fa-caret-down"></i>
+                        </div>
+                        <ul className={`dropdown-menu ${dropdown ? "show" : ""} ${isMobile ? "mobile-dropdown" : ""}`}>
+                            <li>
+                                <Link to="/producten/led_verlichting" className="dropdown-link" onClick={closeMobileMenu}>
+                                    LED VERLICHTING
+                                </Link>
+                            </li>
+                            <li>
+                                <Link to="/producten/ballondecoratie" className="dropdown-link" onClick={closeMobileMenu}>
+                                    BALLONDECORATIE
+                                </Link>
+                            </li>
+                            <li>
+                                <Link to="/producten/photobooth" className="dropdown-link" onClick={closeMobileMenu}>
+                                    PHOTOBOOTH
+                                </Link>
+                            </li>
+                        </ul>
+                    </li>
+    
+                    <li className="nav-item">
+                        <Link to="/bestellen" className="nav-links" onClick={closeMobileMenu}>
+                            BESTELLEN
+                        </Link>
+                    </li>
+    
+                    <li className="nav-item">
+                        <a href="#" className="nav-links" onClick={handleContactClick}>
+                            CONTACT
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    );
 }
 
 export default Navbar;

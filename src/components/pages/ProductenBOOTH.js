@@ -4,6 +4,7 @@ import Footer from "../Footer";
 import TopCardProducts from "../TopCardProducts";
 import ImageCollage from "../ImageCollage";
 import TextDivider from "../TextDivider";
+import ContactForm from "../ContactForm";
 
 function ProductenBOOTH() {
 	const collageImages = [
@@ -48,13 +49,21 @@ evenement rechtstreeks naar uw inbox gestuurd. \n\nKiest u voor een photobooth m
 14 dagen te wachten om hun foto’s te bewonderen!
 \nDe gemaakte foto’s worden direct uitgeprint, zodat uw gasten een
 fysieke herinnering hebben aan uw feest of evenement.
-\n\nHoe leuk is dat?\n\nHet design van de prints kan volledig worden afgestemd op uw
+\n\nHet design van de prints kan volledig worden afgestemd op uw
 feest of evenement. \nU kunt zowel de kleuren als de tekst zelf bepalen.
 Er zijn talloze opties beschikbaar, en daarom bespreken wij het design
-vooraf met u. \nHieraan zijn geen extra kosten verbonden!\n\nDe kosten voor de Photobooth beginnen vanaf € 249,90 "
+vooraf met u. \nHieraan zijn geen extra kosten verbonden!\n\nDe kosten voor de Photobooth beginnen vanaf <bold>€ 139,95</bold>"
 			/>
 
 			<ImageCollage images={collageImages} />
+
+            <div style={{ marginTop: '20px', background: 'white', padding: '40px 0' }}>
+                <ContactForm 
+                    productForm={true} 
+                    emailSubject="Photobooth Aanvraag"
+                />
+            </div>
+
 			<Footer />
 		</>
 	);

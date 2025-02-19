@@ -1,11 +1,17 @@
 .product-card {
-	display: flex;
-	justify-content: center; /* Centers content */
-	align-items: center;
-	background: #bdbeb2;
-	padding: 60px 0;
-	width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #bdbeb2;
+    padding: 60px 0;
+    width: 100%;
     padding-bottom: 150px;
+}
+
+/* Target the last product card */
+.product-card:last-child {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    margin-bottom: 40px;
 }
 
 .product-button {

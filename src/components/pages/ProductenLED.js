@@ -4,6 +4,7 @@ import Footer from "../Footer";
 import TopCardProducts from "../TopCardProducts";
 import ImageCollage from "../ImageCollage";
 import TextDivider from "../TextDivider";
+import ContactForm from "../ContactForm";
 
 function ProductenLED() {
     const collageImages = [
@@ -63,10 +64,17 @@ function ProductenLED() {
                 }
             />
             <TextDivider 
-                text="Ontdek de veelzijdige mogelijkheden van onze LED-verlichting, waarmee u elke ruimte kunt transformeren met een magische gloed. Onze LED's zijn perfect voor het creëren van unieke en persoonlijke sferen, dankzij de eindeloze combinaties van cijfers, letters en symbolen.\n\nJe huurt onze LED-verlichting al vanaf 29,95 huren per stuk."
+                text="Ontdek de veelzijdige mogelijkheden van onze LED-verlichting, waarmee u elke ruimte kunt transformeren met een magische gloed. Onze LED's zijn perfect voor het creëren van unieke en persoonlijke sferen, dankzij de eindeloze combinaties van cijfers, letters en symbolen.\n\nJe huurt onze LED-verlichting al vanaf <bold>€29,95</bold> per stuk."
             />
             <ImageCollage images={collageImages} />
             <ImageCollage images={secondSetOfImages} reversed={true} />
+
+            <div style={{ marginTop: '20px', background: 'white', padding: '40px 0' }}>
+                <ContactForm 
+                    productForm={true} 
+                    emailSubject="LED Verlichting Aanvraag"
+                />
+            </div>
             <Footer />
         </>
     );

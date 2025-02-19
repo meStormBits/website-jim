@@ -1,0 +1,122 @@
+.reviews-section {
+    padding: 60px 20px;
+    text-align: center;
+    background: radial-gradient(circle at 50% 43%,#ffffff,#f1f1f1) !important;
+}
+
+.reviews-title {
+    text-align: center;
+    margin-bottom: 20px;
+    position: relative;
+    display: inline-block;
+}
+
+.title-underline {
+    height: 2px;
+    background-color: #CD7F32;
+    margin: 0px auto 0; /* Changed from 10px to 5px to reduce space */
+}
+.reviews-section h2 {
+    margin-bottom: 20px;
+    font-family: "Tenor Sans", serif;
+    font-size: 26px;
+    color: black;
+}
+
+.reviews-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    position: relative;
+}
+
+.review-card {
+    background: white;
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 350px;
+    display: none;
+    border: 1px solid gray;
+    transition: all 0.3s ease;
+}
+
+.review-card.active {
+    display: block;
+}
+
+.review-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+.stars {
+    color: #CD7F32;
+    margin-bottom: 20px;
+}
+
+.stars i {
+    margin: 0 2px;
+}
+
+.review-text {
+    font-family: "Glacial Indifference", sans-serif;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.author-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.author-avatar {
+    width: 40px;
+    height: 40px;
+    background: #bdbeb2;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.author-name {
+    font-family: "Tenor Sans", serif;
+    font-weight: bold;
+}
+
+.review-dots {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    background: transparent;
+    border: 2px solid #CD7F32;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.dot.active {
+    background: #CD7F32;
+}
+
+@media (max-width: 768px) {
+    .reviews-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .review-card {
+        width: 90%;
+        margin: 0 auto;
+    }
+}
