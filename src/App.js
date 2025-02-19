@@ -9,6 +9,14 @@ import ScrollToTop from "./components/ScrollToTop";
 import PageLoader from "./components/PageLoader"; // Import PageLoader
 import Bestellen from "./components/pages/Bestellen";
 
+// Add this proxy configuration
+const proxyUrl = process.env.NODE_ENV === 'production' 
+    ? 'https://www.wixapis.com'
+    : '';
+
+// Export it so other components can use it
+export const getApiUrl = (path) => `${proxyUrl}${path}`;
+
 function App() {
     return (
         <div className="App">

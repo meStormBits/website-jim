@@ -1,5 +1,6 @@
 {
   "homepage": "https://mestormbits.github.io/website-jim",
+  "proxy": "https://www.wixapis.com",
   "name": "website-jim",
   "version": "0.1.0",
   "private": true,
